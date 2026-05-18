@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 430 98">
+  <defs>
+    <linearGradient id="plate" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f7f0e3" />
+      <stop offset="1" stop-color="#efe4d0" />
+    </linearGradient>
+    <style>
+      .plate { fill: url(#plate); }
+      .word { font-size: 76px; font-family: 'Roboto', 'Arial', 'Helvetica Neue', sans-serif; font-weight: 600; }
+      .ls-3 { letter-spacing: -0.02em; }
+      .ls-4 { letter-spacing: -0.01em; }
+      .ls-5 { letter-spacing: -0.04em; }
+      .ls-6 { letter-spacing: -0.02em; }
+      .ls-7 { letter-spacing: 0; }
+      .ls-8 { letter-spacing: 0.02em; }
+      .c1 { fill: #b5532e; } /* terracotta */
+      .c2 { fill: #c08a1e; } /* ochre */
+      .c3 { fill: #2e7d6e; } /* teal */
+      .c4 { fill: #5a8a3c; } /* olive */
+      .c5 { fill: #7a4b2e; } /* brown */
+      .divider { fill: none; stroke: #cbb38d; stroke-width: 3px; stroke-miterlimit: 10; }
+    </style>
+  </defs>
+  <rect class="plate" x="0.24" y="0.83" width="212.43" height="96.35" rx="12" />
+  <text class="word" transform="translate(7.43 70.28)"><tspan class="ls-3 c1">P</tspan><tspan class="c2" x="39.22" y="0">id</tspan><tspan class="ls-4 c3" x="99.86" y="0">g</tspan><tspan class="c4" x="141.89" y="0">in</tspan><tspan class="ls-5" x="201.85" y="0"> </tspan><tspan class="ls-6 c5" x="215.23" y="0">W</tspan><tspan class="ls-7 c1" x="278.31" y="0">i</tspan><tspan class="ls-8 c3" x="296.09" y="0">k</tspan><tspan class="c4" x="333.03" y="0">i</tspan></text>
+  <path class="c5" d="M415.57,55.42H413.3l-.78-.79a18.3,18.3,0,0,0,4.47-12,18.53,18.53,0,1,0-6.47,14l.78.79v2.24l14.22,14.2,4.24-4.24Zm-17.08,0A12.81,12.81,0,1,1,411.3,42.61,12.81,12.81,0,0,1,398.49,55.42Z" />
+  <line class="divider" x1="366.69" y1="6.55" x2="365.76" y2="91.45" />
+</svg>

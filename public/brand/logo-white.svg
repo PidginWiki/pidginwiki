@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 430 98">
+  <defs>
+    <style>
+      .plate { fill: #ffffff; opacity: 0.14; }
+      .word { font-size: 76px; font-family: 'Roboto', 'Arial', 'Helvetica Neue', sans-serif; font-weight: 500; fill: #ffffff; }
+      .ls-3 { letter-spacing: -0.02em; }
+      .ls-4 { letter-spacing: -0.01em; }
+      .ls-5 { letter-spacing: -0.04em; }
+      .ls-6 { letter-spacing: -0.02em; }
+      .ls-7 { letter-spacing: 0; }
+      .ls-8 { letter-spacing: 0.02em; }
+      .ico { fill: #ffffff; }
+      .divider { fill: none; stroke: #ffffff; stroke-width: 3px; stroke-miterlimit: 10; opacity: 0.6; }
+    </style>
+  </defs>
+  <rect class="plate" x="0.24" y="0.83" width="212.43" height="96.35" />
+  <text class="word" transform="translate(7.43 70.28)"><tspan class="ls-3">P</tspan><tspan x="39.22" y="0">id</tspan><tspan class="ls-4" x="99.86" y="0">g</tspan><tspan x="141.89" y="0">in</tspan><tspan class="ls-5" x="201.85" y="0"> </tspan><tspan class="ls-6" x="215.23" y="0">W</tspan><tspan class="ls-7" x="278.31" y="0">i</tspan><tspan class="ls-8" x="296.09" y="0">k</tspan><tspan x="333.03" y="0">i</tspan></text>
+  <path class="ico" d="M415.57,55.42H413.3l-.78-.79a18.3,18.3,0,0,0,4.47-12,18.53,18.53,0,1,0-6.47,14l.78.79v2.24l14.22,14.2,4.24-4.24Zm-17.08,0A12.81,12.81,0,1,1,411.3,42.61,12.81,12.81,0,0,1,398.49,55.42Z" />
+  <line class="divider" x1="366.69" y1="6.55" x2="365.76" y2="91.45" />
+</svg>
