@@ -29,11 +29,11 @@ useHead(() => ({
     </nav>
 
     <article class="mt-4">
-      <div class="flex flex-col-reverse gap-6 sm:flex-row sm:items-start">
+      <div class="flex flex-col gap-6 sm:flex-row sm:items-start">
         <div class="min-w-0 flex-1">
           <header class="border-b border-outline pb-4">
             <div class="flex flex-wrap items-baseline gap-x-3 gap-y-1">
-              <h1 class="wiki-title text-5xl text-on-surface">{{ word.headword }}</h1>
+              <h1 class="wiki-title text-4xl text-on-surface sm:text-5xl">{{ word.headword }}</h1>
               <span class="text-on-surface-variant">/ {{ word.respelling }} /</span>
               <ListenButton :text="word.headword" label />
             </div>
@@ -56,7 +56,7 @@ useHead(() => ({
                 </p>
                 <p v-if="sense.example" class="mt-1.5 border-l-2 border-outline pl-3 text-on-surface-variant">
                   &ldquo;{{ sense.example }}&rdquo;
-                  <span v-if="sense.exampleEn" class="italic">— {{ sense.exampleEn }}</span>
+                  <span v-if="sense.exampleEn" class="italic">({{ sense.exampleEn }})</span>
                 </p>
               </div>
             </li>

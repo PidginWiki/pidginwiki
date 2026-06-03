@@ -69,7 +69,7 @@ function onSearch() {
               <span class="inline-flex items-center gap-1.5 rounded-full border border-outline bg-surface px-3 py-1 text-xs font-semibold text-on-surface-variant shadow-sm">
                 <span class="leading-none">{{ tagline.flag }}</span>{{ tagline.lang }}
               </span>
-              <h1 class="wiki-title mx-auto mt-3 max-w-2xl text-3xl leading-tight text-on-surface sm:text-4xl">
+              <h1 class="wiki-title mx-auto mt-3 max-w-2xl text-2xl leading-tight text-on-surface sm:text-4xl">
                 {{ tagParts.a }} <span class="text-primary">{{ tagParts.b }}</span>
               </h1>
             </div>
@@ -108,8 +108,8 @@ function onSearch() {
     </section>
 
     <!-- Main page: featured article + side rail -->
-    <div class="mx-auto grid max-w-6xl gap-8 px-4 py-10 lg:grid-cols-3">
-      <main class="lg:col-span-2">
+    <div class="mx-auto grid max-w-6xl grid-cols-1 gap-8 px-4 py-10 lg:grid-cols-3">
+      <main class="min-w-0 lg:col-span-2">
         <h2 class="wiki-h text-xl text-on-surface">
           <span class="flex items-center gap-2">
             <span class="kente-bar h-4 w-1.5 rounded-full" aria-hidden="true" />
@@ -119,7 +119,7 @@ function onSearch() {
         </h2>
 
         <article v-if="featured" class="mt-5">
-          <div class="flex flex-col-reverse gap-6 sm:flex-row sm:items-start">
+          <div class="flex flex-col gap-6 sm:flex-row sm:items-start">
             <div class="min-w-0 flex-1">
               <div class="flex flex-wrap items-baseline gap-x-3 gap-y-1">
                 <h3 class="wiki-title text-4xl text-on-surface">{{ featured.headword }}</h3>
@@ -140,7 +140,7 @@ function onSearch() {
                     </p>
                     <p v-if="sense.example" class="mt-1 border-l-2 border-outline pl-3 text-on-surface-variant">
                       &ldquo;{{ sense.example }}&rdquo;
-                      <span v-if="sense.exampleEn" class="italic">— {{ sense.exampleEn }}</span>
+                      <span v-if="sense.exampleEn" class="italic">({{ sense.exampleEn }})</span>
                     </p>
                   </div>
                 </li>
@@ -197,7 +197,7 @@ function onSearch() {
       </main>
 
       <!-- Side rail -->
-      <aside class="space-y-6">
+      <aside class="min-w-0 space-y-6">
         <section v-if="wotd" class="overflow-hidden rounded-lg border border-outline bg-surface">
           <h2 class="wiki-box-h text-on-surface" style="--accent: var(--color-kente-gold)">Word of the day</h2>
           <div class="px-4 py-3">
