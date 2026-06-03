@@ -127,7 +127,7 @@ onBeforeUnmount(() => {
       </div>
       <div class="border-t border-white/10">
         <div class="mx-auto max-w-6xl px-4 py-5 text-xs text-on-inverse-surface/60">
-          &copy; {{ year }} Pidgin Wiki. Content licensed CC-BY-4.0.
+          &copy; {{ year }} Pidgin Wiki.
         </div>
       </div>
     </footer>

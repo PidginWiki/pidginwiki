@@ -132,28 +132,32 @@ function pick(i: number) { stop(); go(i) }
     <div class="flex items-center justify-between border-t border-outline px-3 py-2">
       <button
         type="button"
-        class="inline-flex h-8 w-8 items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-2"
+        class="inline-flex h-9 w-9 items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-2"
         aria-label="Previous dialect"
         @click="pick(idx - 1)"
       >
         <span class="material-symbols-outlined" style="font-size:20px">chevron_left</span>
       </button>
-      <div class="flex gap-1.5">
+      <div class="flex items-center">
         <button
           v-for="(l, i) in lenses"
           :key="l.region"
           type="button"
-          class="h-1.5 rounded-full transition-all"
-          :class="i === idx ? 'w-5' : 'w-1.5 bg-outline-strong hover:bg-on-surface-variant'"
-          :style="i === idx ? { background: active.accent } : {}"
+          class="group px-1.5 py-3"
           :aria-label="`Show ${l.region}`"
           :aria-current="i === idx"
           @click="pick(i)"
-        />
+        >
+          <span
+            class="block h-1.5 rounded-full transition-all"
+            :class="i === idx ? 'w-5' : 'w-1.5 bg-outline-strong group-hover:bg-on-surface-variant'"
+            :style="i === idx ? { background: active.accent } : {}"
+          />
+        </button>
       </div>
       <button
         type="button"
-        class="inline-flex h-8 w-8 items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-2"
+        class="inline-flex h-9 w-9 items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-2"
         aria-label="Next dialect"
         @click="pick(idx + 1)"
       >
