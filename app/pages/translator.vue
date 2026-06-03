@@ -81,7 +81,7 @@ const toLabel = computed(() => (direction.value === 'pcm-en' ? 'English' : 'Pidg
           rows="6"
           :placeholder="direction === 'pcm-en' ? 'Type Pidgin, e.g. how far, you don chop?' : 'Type English'"
           class="field mt-1 resize-none"
-        ></textarea>
+        />
       </div>
       <div>
         <label class="text-sm font-medium text-on-surface-variant">{{ toLabel }}</label>

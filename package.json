@@ -3,12 +3,17 @@
   "type": "module",
   "private": true,
   "description": "The public Pidgin.wiki website: dictionary, translator, and encyclopedia.",
+  "packageManager": "pnpm@11.5.0",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
   "dependencies": {
     "nuxt": "^4.4.6",
@@ -16,7 +21,14 @@
     "vue-router": "^5.0.7"
   },
   "devDependencies": {
+    "@nuxt/eslint": "^1.15.2",
+    "@nuxt/test-utils": "^4.0.3",
     "@tailwindcss/vite": "^4.1.0",
-    "tailwindcss": "^4.1.0"
+    "@vue/test-utils": "^2.4.10",
+    "eslint": "^10.4.1",
+    "happy-dom": "^20.9.0",
+    "tailwindcss": "^4.1.0",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.8"
   }
 }

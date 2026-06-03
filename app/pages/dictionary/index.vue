@@ -32,7 +32,7 @@ const filtered = computed(() => {
         type="search"
         placeholder="Filter words"
         class="w-full bg-transparent outline-none placeholder:text-on-surface-variant"
-      />
+      >
     </div>
 
     <p class="mt-5 text-sm text-on-surface-variant">{{ filtered.length }} entries</p>

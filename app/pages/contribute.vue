@@ -69,17 +69,17 @@ function submit() {
           <form v-if="!sent" class="mt-4 space-y-4" @submit.prevent="submit">
             <div>
               <label for="cw" class="text-sm font-medium text-on-surface">Word or phrase</label>
-              <input id="cw" v-model="word" required class="field mt-1" placeholder="e.g. wahala" :aria-invalid="attempted && !word ? 'true' : undefined" aria-describedby="cw-error" />
+              <input id="cw" v-model="word" required class="field mt-1" placeholder="e.g. wahala" :aria-invalid="attempted && !word ? 'true' : undefined" aria-describedby="cw-error" >
               <p v-if="attempted && !word" id="cw-error" class="error-text">Please enter a word.</p>
             </div>
             <div>
               <label for="cm" class="text-sm font-medium text-on-surface">What does it mean?</label>
-              <input id="cm" v-model="meaning" required class="field mt-1" placeholder="e.g. trouble; problem" :aria-invalid="attempted && !meaning ? 'true' : undefined" aria-describedby="cm-error" />
+              <input id="cm" v-model="meaning" required class="field mt-1" placeholder="e.g. trouble; problem" :aria-invalid="attempted && !meaning ? 'true' : undefined" aria-describedby="cm-error" >
               <p v-if="attempted && !meaning" id="cm-error" class="error-text">Please add a meaning.</p>
             </div>
             <div>
               <label for="ce" class="text-sm font-medium text-on-surface">Example sentence <span class="text-on-surface-variant">(optional)</span></label>
-              <input id="ce" v-model="example" class="field mt-1" placeholder="e.g. No wahala, I dey come" />
+              <input id="ce" v-model="example" class="field mt-1" placeholder="e.g. No wahala, I dey come" >
             </div>
             <div>
               <label for="cr" class="text-sm font-medium text-on-surface">Region</label>
@@ -88,7 +88,7 @@ function submit() {
               </select>
             </div>
             <label class="flex items-start gap-3 text-sm text-on-surface-variant">
-              <input v-model="consent" type="checkbox" class="mt-1 h-4 w-4 accent-[var(--color-primary)]" />
+              <input v-model="consent" type="checkbox" class="mt-1 h-4 w-4 accent-[var(--color-primary)]" >
               I agree that my contribution may be published in the open Pidgin Wiki corpus under CC-BY-4.0.
             </label>
             <p v-if="attempted && !consent" class="error-text -mt-2">Please accept this to continue.</p>
