@@ -8,12 +8,6 @@ export default defineNuxtConfig({
   vite: {
     plugins: [tailwindcss()],
   },
-  nitro: {
-    prerender: {
-      crawlLinks: true,
-      routes: ['/', '/dictionary', '/translator', '/contribute', '/volunteer', '/brand'],
-    },
-  },
   app: {
     pageTransition: { name: 'page', mode: 'out-in' },
     head: {
