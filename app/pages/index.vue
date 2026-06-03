@@ -95,7 +95,7 @@ function onSearch() {
               placeholder="Search 1,200+ Pidgin words"
               class="w-full bg-transparent text-sm text-on-surface outline-none placeholder:text-on-surface-variant"
               aria-label="Search the dictionary"
-            />
+            >
           </div>
           <div v-if="results.length" class="absolute left-0 top-full z-40 mt-2 w-full overflow-hidden rounded-xl border border-outline bg-surface text-left shadow-[var(--shadow-e2)]" role="listbox">
             <NuxtLink v-for="w in results" :key="w.slug" :to="`/dictionary/${w.slug}`" role="option" class="flex items-baseline gap-3 px-4 py-2.5 hover:bg-surface-2">

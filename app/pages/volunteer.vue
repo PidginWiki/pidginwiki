@@ -131,7 +131,7 @@ function setChannel(c: 'email' | 'whatsapp') {
                 :aria-invalid="error ? 'true' : undefined"
                 aria-describedby="contact-error"
                 @input="error = ''"
-              />
+              >
               <p v-if="error" id="contact-error" class="error-text">{{ error }}</p>
             </div>
 
